@@ -1,0 +1,12 @@
+{
+  "commit": {
+    "commit": "e95e3be0bfef0268e774128664c24799c9159903",
+    "author": "leonawicz <matt_leonawicz@esource.com>",
+    "time": "2021-02-20 16:18:22",
+    "files": 2,
+    "merge": false,
+    "message": "Update metadata.\n"
+  },
+  "remote": "https://github.com/ropensci/eia",
+  "pkg": "eia"
+}
