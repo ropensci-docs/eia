@@ -1,0 +1,12 @@
+{
+  "commit": {
+    "commit": "98f620f6dcf1cf2e7c93c9bff50adc2f3d3526b2",
+    "author": "Matt Hoff <matthew.g.hoff@gmail.com>",
+    "time": "2023-11-17 16:45:40",
+    "files": 8,
+    "merge": true,
+    "message": "Merge pull request #18 from ropensci/dev\n\n`eia_data()` refactor: dynamic error handling, forced input format requirements, and additional unit testing"
+  },
+  "repo": "https://github.com/ropensci/eia",
+  "pkg": "eia"
+}

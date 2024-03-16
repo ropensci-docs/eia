@@ -1,0 +1,11 @@
+pandoc: 2.16.2
+pkgdown: 2.0.7
+pkgdown_sha: ~
+articles:
+  api: api.html
+  eia: eia.html
+last_built: 2024-03-16T06:11Z
+urls:
+  reference: https://docs.ropensci.org/eia/reference
+  article: https://docs.ropensci.org/eia/articles
+
