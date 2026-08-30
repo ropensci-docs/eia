@@ -1,0 +1,13 @@
+{
+  "commit": {
+    "commit": "3c98e83381695f47fcbf2c7afc678d9372570660",
+    "author": "Matt Hoff <matthew.g.hoff@gmail.com>",
+    "time": "2024-07-19T21:54:03Z",
+    "files": 1,
+    "merge": true,
+    "message": "Merge pull request #24 from ropensci/maelle-patch-2\n\ndocs: fix pkgdown navbar config"
+  },
+  "repo": "https://github.com/ropensci/eia",
+  "pkg": "eia",
+  "time": "2026-08-30T07:39:42Z"
+}
