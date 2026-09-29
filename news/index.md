@@ -1,0 +1,124 @@
+# Changelog
+
+## eia 0.4.2
+
+CRAN release: 2024-04-15
+
+- Removed one-off, non-API, report download function that no longer
+  works but also do not intend to support within the scope of the
+  package.
+- Removed related, no longer needed package imports.
+- Updated documentation.
+
+## eia 0.4.1
+
+CRAN release: 2023-11-17
+
+- Re-factor of
+  [`eia_data()`](https://docs.ropensci.org/eia/reference/eia_data.md):
+  - Added dynamic error handling via metadata layer conditioned on new
+    function argument `check_metadata`.
+  - Forced `start` and `end` input values to character.
+  - Forced `length` and `offset` input values to numeric.
+  - Augmented `sort` functionality to now handle multiple, varying
+    “asc”/“desc” inputs to `order` as a list, rather than just one value
+    of “asc” or “desc” applied to all specified columns.
+  - Improved error messaging with `check_metadata = TRUE` to more
+    closely resemble those provided by the API (i.e. with
+    `check_metadata = FALSE`).
+
+## eia 0.4.0
+
+CRAN release: 2023-10-31
+
+- Updated functions and functionality based on the new v2 API, effective
+  March 2023; due to the nature of the API changes, `eia` has undergone
+  an extensive refactor in which many of the previous functions are no
+  longer applicable and do not exist.
+- Replaced `eia_categories()` etc. with
+  [`eia_dir()`](https://docs.ropensci.org/eia/reference/eia_dir.md).
+- Removed `eia_series_*`, `eia_geosets()`, and `eia_updates()`
+  functions.
+- Added
+  [`eia_metadata()`](https://docs.ropensci.org/eia/reference/eia_metadata.md)
+  and
+  [`eia_data()`](https://docs.ropensci.org/eia/reference/eia_data.md).
+- Updated docs and vignettes.
+- Updated tests.
+
+## eia 0.3.7
+
+CRAN release: 2021-02-20
+
+- Updated URL for `eia_updates`.
+- Minor fixes.
+- Updated vignettes.
+
+## eia 0.3.6
+
+CRAN release: 2020-05-08
+
+- Minor fix to canned report.
+- Switch from http to https.
+- Documentation updates.
+
+## eia 0.3.5
+
+- Minor documentation updates.
+
+## eia 0.3.4
+
+CRAN release: 2019-11-27
+
+- Added initial report function.
+- Minor code improvements.
+- Minor documentation updates.
+
+## eia 0.3.3
+
+CRAN release: 2019-09-16
+
+- Added a wrapper for the series category endpoint.
+- Updated documentation, vignette and unit tests.
+
+## eia 0.3.2
+
+CRAN release: 2019-07-25
+
+- Updated formatting for CRAN.
+
+## eia 0.3.1
+
+- Updated package metadata and improved Travis testing suite
+  configuration.
+
+## eia 0.3.0
+
+- Added convenient key store methods with getter and setter helpers,
+  optionally making it easy to avoid having to provide the key in every
+  function call.
+- Moved `key` argument from first to last among relevant function
+  arguments and updated all examples accordingly.
+- Added support for hourly time series requests and date format
+  handling.
+
+## eia 0.2.0
+
+- Added optional memoization to API functions, adding a new `cache`
+  argument.
+- Added anti-DOS measures, which can be adjusted using
+  [`options()`](https://rdrr.io/r/base/options.html).
+- Added more vignettes and documentation.
+- Added helper functions for clearing cached results.
+- Added helper functions for working with EIA date strings.
+- Added helper functions for time series metadata.
+- More output formats and consistency between functions.
+- Added unit tests.
+- Minor updates to functions, documentation.
+
+## eia 0.1.0
+
+- Added package scaffolding.
+- Added initial package functions for working with data categories, time
+  series, and geosets.
+- Added function documentation, unit tests, vignettes.
